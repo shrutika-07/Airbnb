@@ -26,7 +26,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
     return (
         
         <div className="relative">
-            <div className="pb-3">
+            <div className="pb-0.2">
                 <div className="flex flex-row items-center gap-3">
                     <div className="
                         hidden

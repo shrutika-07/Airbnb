@@ -4,7 +4,7 @@ import { BiSearch } from 'react-icons/bi';
 
 const Search = () => {
     return(
-        <div className="pb-3.5">
+        <div className="pb-0.5 pl-20">
             <div className="
             border-[1px]
             w-full

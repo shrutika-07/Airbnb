@@ -16,24 +16,30 @@ const Navbar: React.FC<NavbarProps> = ({
 }) => {
     console.log({ currentUser });
     return (
-        <div className="fixed w-full px-12 bg-white z-10 shadow-sm">
-            <div className="py-2 border-b-[1 px]">
+        <div className="fixed w-full bg-white z-10 shadow-sm">
+            <div
+                className="
+                    py-4
+                    border-b-[1px]    
+                "
+            >
                 <Container>
-                    <div className="
+                    <div 
+                        className="
                         flex
                         flex-row
                         items-center
                         justify-between
-                        gap-3
+                        gap-2
                         md:gap-0"
                     >
-                        <Logo/>
-                        <Search/>
-                        <UserMenu currentUser = {currentUser}/>
+                        <Logo />
+                        <Search />
+                        <UserMenu currentUser={currentUser}/>
                     </div>
                 </Container>
             </div>
-            <Categories/>
+          <Categories />
         </div>
         
     )
