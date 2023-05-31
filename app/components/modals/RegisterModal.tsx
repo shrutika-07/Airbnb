@@ -17,6 +17,7 @@ import { toast } from 'react-hot-toast';
 import Button from "../Button";
 import { IoLogoApple, IoLogoGithub, } from "react-icons/io";
 import userLoginModal from "@/app/hooks/useLoginModal";
+import { signIn } from "next-auth/react";
 
 const RegisterModal = () => {
     const loginModal = userLoginModal();
@@ -93,13 +94,13 @@ const RegisterModal = () => {
                 outline
                 label="Continue with Google"
                 icon={FcGoogle}
-                onClick={() => {}}
+                onClick={() => signIn('google')}
             />
             <Button
                 outline
                 label="Continue with GitHub"
                 icon={IoLogoGithub}
-                onClick={() => {}}
+                onClick={() => signIn('github')}
             />
             <div className="
                 text-neutral-500
