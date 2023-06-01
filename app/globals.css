@@ -56,3 +56,10 @@ body,
 ::-webkit-scrollbar-thumb:hover {
   background-color: #ff6188; /* Reddish-pink color on hover */
 }
+
+.leaflet-botton,
+.leaflet-control,
+.leaflet-pane,
+.leaflet-top {
+  z-index: 0 !important;
+}

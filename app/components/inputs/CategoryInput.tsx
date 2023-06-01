@@ -22,7 +22,7 @@ const CategoryInput: React.FC<CategoryInputProps> = ({
             p-4
             flex
             flex-col
-            gap-3
+            gap-1
             hover:border-black
             transition
             cursor-pointer
