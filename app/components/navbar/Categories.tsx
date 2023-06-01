@@ -1,12 +1,13 @@
 import Container from "../Container";
 import { TbBeach, TbMountain, TbPool } from 'react-icons/tb';
-import { GiBarn, GiBoatFishing, GiCactus, GiCastle, GiCaveEntrance, GiForestCamp, GiIsland, GiTreehouse, GiWindmill } from 'react-icons/gi';
-import { MdOutlineVilla } from 'react-icons/md';
+import { GiBarn, GiBoatFishing, GiCactus, GiCastle, GiCaveEntrance, GiForestCamp, GiGrapes, GiIsland, GiTreehouse, GiWhiteTower, GiWindmill } from 'react-icons/gi';
+import { MdOutlineSportsGolf, MdOutlineSurfing, MdOutlineVilla } from 'react-icons/md';
 import CategoryBox from "../CategoryBox";
 import { usePathname, useSearchParams } from "next/navigation";
-import { FaSkiing } from "react-icons/fa";
+import { FaShuttleVan, FaSkiing } from "react-icons/fa";
 import { BsSnow } from "react-icons/bs";
 import { IoDiamond } from "react-icons/io5";
+import { MdOutlineHouseboat } from "react-icons/md"
 
 export const categories = [
     {
@@ -70,6 +71,11 @@ export const categories = [
         description: 'This property is in a cave!'
     },
     {
+        label: 'Boathouses',
+        icon: MdOutlineHouseboat,
+        description: 'This property is a boathouse!'
+    },
+    {
         label: 'Desert',
         icon: GiCactus,
         description: 'This property is in a desert!'
@@ -83,6 +89,31 @@ export const categories = [
         label: 'Treehouses',
         icon: GiTreehouse,
         description: 'This property is a treehouse!'
+    },
+    {
+        label: 'Towers',
+        icon: GiWhiteTower,
+        description: 'This property is a tower!'
+    },
+    {
+        label: 'Vans',
+        icon: FaShuttleVan,
+        description: 'This property is a camper van!'
+    },
+    {
+        label: 'Surfing',
+        icon: MdOutlineSurfing,
+        description: 'This property has surfing activities!'
+    },
+    {
+        label: 'Golfing',
+        icon: MdOutlineSportsGolf,
+        description: 'This property has golfing activities!'
+    },
+    {
+        label: 'Vineyards',
+        icon: GiGrapes,
+        description: 'This property is located near a vineyard!'
     },
     {
         label: 'Lux',
