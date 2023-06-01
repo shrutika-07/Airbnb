@@ -1,6 +1,6 @@
 import Container from "../Container";
 import { TbBeach, TbMountain, TbPool } from 'react-icons/tb';
-import { GiBarn, GiBoatFishing, GiCactus, GiCastle, GiCaveEntrance, GiForestCamp, GiIsland, GiWindmill } from 'react-icons/gi';
+import { GiBarn, GiBoatFishing, GiCactus, GiCastle, GiCaveEntrance, GiForestCamp, GiIsland, GiTreehouse, GiWindmill } from 'react-icons/gi';
 import { MdOutlineVilla } from 'react-icons/md';
 import CategoryBox from "../CategoryBox";
 import { usePathname, useSearchParams } from "next/navigation";
@@ -78,6 +78,11 @@ export const categories = [
         label: 'Barns',
         icon: GiBarn,
         description: 'This property is in a barn!'
+    },
+    {
+        label: 'Treehouses',
+        icon: GiTreehouse,
+        description: 'This property is a treehouse!'
     },
     {
         label: 'Lux',
