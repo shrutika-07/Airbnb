@@ -21,7 +21,7 @@ const font = Nunito({
 })
 
 export default async function RootLayout({
-  children,
+  children
 }: {
   children: React.ReactNode
 }) {
@@ -37,7 +37,9 @@ export default async function RootLayout({
           <RegisterModal/>
           <Navbar currentUser = {currentUser}/>
         </ClientOnly>
-        {children}
+        <div className='pb-20 pt-28'>
+          {children}
+        </div>
       </body>
     </html>
   )
