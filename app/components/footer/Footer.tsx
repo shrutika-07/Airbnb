@@ -1,11 +1,6 @@
 'use client';
 
 import Container from "../Container";
-import EmailIcon from "./EmailIcon";
-import GithubIcon from "./GithubIcon";
-import LinkedInIcon from "./LinkedInIcon";
-import InstagramIcon from "./InstagramIcon";
-import { Helmet } from "react-helmet";
 
 const Footer = () => {
   return (
@@ -13,13 +8,7 @@ const Footer = () => {
       <div className="py-3 border-t border-gray-300">
         <Container>
           <div className="flex items-center justify-between">
-            <Helmet>
-              <link
-                href="https://fonts.googleapis.com/css2?family=Monotype+Corsiva&display=swap"
-                rel="stylesheet"
-              />
-            </Helmet>
-            <h2 className="text-lg mr-4 font-monotype-corsiva font-bold">
+            <h2 className="text-lg mr-4 font-bold">
                 Connect with me
             </h2>
             <div className="flex gap-4">
@@ -42,24 +31,6 @@ const Footer = () => {
           </div>
         </Container>
       </div>
-      <style jsx>{`
-        .icon {
-          transition: transform 0.3s;
-        }
-        .icon:hover {
-          transform: scale(1.2);
-        }
-        .vertical-line {
-          height: 20px;
-          width: 1px;
-          background-color: #ddd;
-          margin: 0 8px;
-        }
-        .font-monotype-corsiva {
-            font-family: "Monotype Corsiva", cursive;
-            font-size: 1.5rem;
-          }
-      `}</style>
     </div>
   );
 };
