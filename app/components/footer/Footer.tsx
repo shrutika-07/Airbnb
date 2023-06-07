@@ -5,7 +5,7 @@ import EmailIcon from "./EmailIcon";
 import GithubIcon from "./GithubIcon";
 import LinkedInIcon from "./LinkedInIcon";
 import InstagramIcon from "./InstagramIcon";
-import 'E:/MyProjects/airbnb/airbnb_proj/app/fonts.css';
+import { Helmet } from "react-helmet";
 
 const Footer = () => {
   return (
@@ -13,6 +13,12 @@ const Footer = () => {
       <div className="py-3 border-t border-gray-300">
         <Container>
           <div className="flex items-center justify-between">
+            <Helmet>
+              <link
+                href="https://fonts.googleapis.com/css2?family=Monotype+Corsiva&display=swap"
+                rel="stylesheet"
+              />
+            </Helmet>
             <h2 className="text-lg mr-4 font-monotype-corsiva font-bold">
                 Connect with me
             </h2>
