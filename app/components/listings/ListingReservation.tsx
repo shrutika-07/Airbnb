@@ -53,7 +53,7 @@ const ListingReservation: React.FC<ListingReservationProps> = ({
                     onClick={onSubmit}
                 />
             </div>
-            <div className='pb-2 flex justify-center fonts-semibold text-lg'>You won't be charged yet</div>
+            <div className='pb-2 flex justify-center fonts-semibold text-lg'>You would not be charged yet</div>
             <hr/>
             <div className='
                 p-4
