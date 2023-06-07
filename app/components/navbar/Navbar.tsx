@@ -41,7 +41,6 @@ const Navbar: React.FC<NavbarProps> = ({
             </div>
           <Categories />
         </div>
-        
     )
 }
 
